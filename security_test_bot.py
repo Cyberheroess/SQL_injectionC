@@ -10,12 +10,12 @@ import socket
 
 app = flask.Flask(__name__)
 
-# Fungsi untuk memeriksa HTTPS
+
 def check_https(url):
     parsed_url = urlparse(url)
     return parsed_url.scheme == 'https'
 
-# Fungsi untuk memeriksa header keamanan
+
 def check_security_headers(url):
     try:
         response = requests.get(url)
@@ -31,7 +31,7 @@ def check_security_headers(url):
     except requests.RequestException:
         return "Tidak dapat mengakses URL"
 
-# Fungsi untuk mendeteksi form input
+
 def detect_input_forms(url):
     try:
         response = requests.get(url)
@@ -41,7 +41,7 @@ def detect_input_forms(url):
     except requests.RequestException:
         return "Tidak dapat mengakses URL"
 
-# Fungsi bot yang diperbarui dengan Bahasa Indonesia
+
 def bot_response(message):
     message = message.lower()
     if "halo" in message or "hai" in message:

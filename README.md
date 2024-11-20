@@ -1,4 +1,4 @@
-## sql_injection
+# sql_injection
 ## Instalasi
 1. Pastikan Python 3.7+ terinstal di sistem Anda.
 2. Install dependensi yang diperlukan:
